@@ -26,11 +26,13 @@ Step 2:Fetch VM Instances
 Step 3:Verify Tunnel Connectivity assert.NotNil(t, instance.NetworkInterfaces[0].AccessConfigs[0].NatIP)
 
 5.Ensure that the system is resilient. 
+
 a. Load Testing:
    - Start a load generator to simulate a high volume of concurrent requests.
    - Monitor system metrics such as response time and throughput under the load.
    - Assert that the system response time and throughput are within acceptable ranges.
    - Stop the load generator.
+
 b. Failure Recovery Testing:
    - Simulate a failure scenario, such as stopping a virtual machine instance.
    - Allow some time for the system to detect and recover from the failure.
